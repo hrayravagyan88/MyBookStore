@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { assets } from "../assets/assets";
 import { firestore } from "../../firebase";
 import { useParams } from "react-router-dom";
 import { ShopContext } from "../context/shopContext";
@@ -120,6 +121,34 @@ const Product = () => {
           ) : (
             ""
           )}
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-2 mt-6">
+        <div>
+          <img
+            className="Picture-img-aW1nU"
+            src={assets.Mommy}
+            width="625"
+            height="491"
+            alt="A page inside the personalised book"
+            loading="lazy"
+            data-uw-rm-alt-original="A page inside the personalised book"
+            data-uw-rm-alt="ALT"
+          />
+        </div>
+        <div className="InfoSection-content">
+          {" "}
+          <div className="InfoSection-text">
+            {" "}
+            <h3 className="InfoHead">When is a book not just a book?</h3>{" "}
+            <p>
+              When it includes a message of love to transform it into a
+              treasured keepsake. Add your own dedication for free and we’ll
+              print it on the first page, so every time they open their book,
+              they remember just how loved they are.
+            </p>{" "}
+          </div>{" "}
         </div>
       </div>
     </div>

@@ -211,4 +211,18 @@ ul.a {
   padding: 0;
   list-style: none;
 } 
+.InfoSection-content{
+  margin: auto auto
+}
+.InfoSection-text{
+  justify-self: center;
+  width: clamp(32ch, 100%, 48ch);
+  line-height: 1.5;
+  margin: auto auto
+} 
+.InfoHead{
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 

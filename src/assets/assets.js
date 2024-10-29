@@ -8,7 +8,7 @@ import image from  '../assets/image.jpg'
 import image1 from  '../assets/image1.jpg'
 import BigPic from '../assets/BigPic.jpg'
 import Lion from '../assets/lion.png'
-
+import Mommy from '../assets/Mommy.avif'
 export const assets = {
     logo,
     bear1,
@@ -19,7 +19,8 @@ export const assets = {
     image1,
     image,
     BigPic,
-    Lion
+    Lion,
+    Mommy
 }
 
 export const products = [
