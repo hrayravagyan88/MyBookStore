@@ -32,7 +32,7 @@ export default function FloatLabelDemo() {
   }
 
   return (
-    <div>
+    <div className="container mx-auto">
     <div className="border-t-2 pt-10 " style= {{'margin':'0 auto', 'width':'1500px'}}></div>
     <div className= "flex justify-center text-xl mb-6" >
         <h1>Address and Payment</h1>

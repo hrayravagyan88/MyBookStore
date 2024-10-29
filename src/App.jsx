@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
-import Contacting from "./pages/Contacting";
+import Contacting from "./pages/Personalize";
 import Submit from "./pages/Submit";
 import MainLayout from "./components/MainLayout";
 

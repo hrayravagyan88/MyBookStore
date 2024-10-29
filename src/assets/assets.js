@@ -9,6 +9,8 @@ import image1 from  '../assets/image1.jpg'
 import BigPic from '../assets/BigPic.jpg'
 import Lion from '../assets/lion.png'
 import Mommy from '../assets/Mommy.avif'
+import Avatar from '../assets/Avatar.png'
+import AvatarBackGround from '../assets/AvatarBackGround.png'
 export const assets = {
     logo,
     bear1,
@@ -20,7 +22,9 @@ export const assets = {
     image,
     BigPic,
     Lion,
-    Mommy
+    Mommy,
+    Avatar,
+    AvatarBackGround
 }
 
 export const products = [

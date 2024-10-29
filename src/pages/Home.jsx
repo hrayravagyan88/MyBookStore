@@ -5,10 +5,10 @@ import BestSellers from '../components/BestSellers'
 
 const Home = () => {
   return (
-    <>
+    <div className="container mx-auto">
       <Hero />
       <MainMenu />
-    </>
+    </div>
   )
 }
 

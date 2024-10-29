@@ -12,7 +12,7 @@ import { addDoc, doc, updateDoc, getDoc } from "firebase/firestore";
 import ImageUploadFile from "./ImageUploadFile";
 import ErrorMessage from "../components/ErrorMessage";
 import { useNavigate } from "react-router-dom";
-
+import { assets } from "../assets/assets";
 const Contacting = () => {
   const navigate = useNavigate();
   const [details, setDetails] = useState({
@@ -32,11 +32,13 @@ const Contacting = () => {
   const UserData = collection(firestore, "UserDetails");
 
   function uuidv4() {
-    return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c =>
-      (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16)
+    return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, (c) =>
+      (
+        +c ^
+        (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (+c / 4)))
+      ).toString(16)
     );
   }
-  
 
   const CheckingMail = () => {
     const { email } = details;
@@ -81,13 +83,14 @@ const Contacting = () => {
     let isValidName = CheckFullname();
     let checkInvalidPics = CheckPics();
 
-    console.log(isValidName, isValidMail, isValidPhone, checkInvalidPics);
-
     const storage = getStorage();
 
     const _doc = await addDoc(UserData, details);
     for (let photo of photos) {
-      const storageRef = ref(storage, `/uploads/${uuidv4()}-${photo.file.name}`);
+      const storageRef = ref(
+        storage,
+        `/uploads/${uuidv4()}-${photo.file.name}`
+      );
       const metadata = {
         contentType: "image/jpg",
       };
@@ -105,8 +108,8 @@ const Contacting = () => {
             });
           });
 
-         //  getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-           //  getDoc(doc(UserData, _doc.id)).then((d) => {
+          //  getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+          //  getDoc(doc(UserData, _doc.id)).then((d) => {
           //     const data = d.data();
           //     const medias = data.medias || [];
 
@@ -119,7 +122,6 @@ const Contacting = () => {
           // });
         }
       );
-
     }
 
     // navigate("submit");
@@ -130,15 +132,17 @@ const Contacting = () => {
   }
 
   return (
-    <div>
-      <div
-        style={{ margin: "0 auto", width: "1500px" }}
-        className="border-t-2 pt-10 trasition-opacity ease-in duration-500 opacity-100"
-      ></div>
-      <div className="flex justify-center text-xl">
-        <h1>Personalize your Book</h1>
+    <>
+      <div className="container mx-auto mt-6 mb-4 flex justify-center text-xl">
+        <h1>Splendid, now add the child to your story!</h1>
       </div>
-      <div className="flex flex-col divForms">
+      <div className="backgroundDIv">
+        <span className="backGroundSpan">
+          <img className="mainPic" src={assets.Avatar} alt="" />
+          <img className="backgroundPic" src={assets.AvatarBackGround} />
+        </span>
+      </div>
+      <div className="container mx-auto flex flex-col divForms">
         <form style={{ marginLeft: "135px" }}>
           <div className="grid gap-6 mb-6 md:grid-cols-2">
             <div>
@@ -254,7 +258,7 @@ const Contacting = () => {
           </button>
         </form>
       </div>
-    </div>
+    </>
   );
 };
 
