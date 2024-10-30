@@ -5,6 +5,7 @@ import Product from "./pages/Product";
 import Contacting from "./pages/Personalize";
 import Submit from "./pages/Submit";
 import MainLayout from "./components/MainLayout";
+import DeliveryInfo from "./components/DeliveryInfo";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/product/:productId" element={<Product />} />
+          <Route path="/deliveryInfo" element={<DeliveryInfo />} />
           <Route
             path="/product/:productId/Contacting"
             element={<Contacting />}

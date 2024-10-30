@@ -36,7 +36,8 @@ const Myfooter = () => {
           <div className="col-span-1">
             <h4 className="font-semibold text-gray-100">Help and Support</h4>
 
-            <div className="mt-3 grid space-y-3">
+            <div className="mt-3 grid space-y-3 cursor-pointer ">
+            <NavLink to="/DeliveryInfo">
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
@@ -45,6 +46,7 @@ const Myfooter = () => {
                   Delivery Info
                 </a>
               </p>
+              </NavLink>
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"

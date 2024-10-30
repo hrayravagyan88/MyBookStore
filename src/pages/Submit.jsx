@@ -32,13 +32,13 @@ export default function FloatLabelDemo() {
   }
 
   return (
-    <div className="container mx-auto">
-    <div className="border-t-2 pt-10 " style= {{'margin':'0 auto', 'width':'1500px'}}></div>
-    <div className= "flex justify-center text-xl mb-6" >
+<div className="mb-6 " style = {{'background':'#fdf8f1'}}>
+    <div  className="container mx-auto mb-6 flex justify-center text-xl">
         <h1>Address and Payment</h1>
       </div>
+    <div className="center">
+      <div>
     <div className="flex flex-col address">
-   
       <div className="mb-6">
         <div>
           <label
@@ -64,18 +64,90 @@ export default function FloatLabelDemo() {
           htmlFor="email"
           className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
         >
-          Address
+          Street Address
         </label>
         <input
           onChange={(e) => handleChange(e, "phone")}
           type="text"
           id="phone"
-          style = {{'minWidth':'725px'}}
+          style = {{'minWidth':'300px'}}
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="street/appartement"
           required
         />
       </div>
+
+      <div className="mb-6">
+        <label
+          htmlFor="email"
+          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >
+          Apt #, Building,etc
+        </label>
+        <input
+          onChange={(e) => handleChange(e, "phone")}
+          type="text"
+          id="phone"
+          style = {{'minWidth':'300px'}}
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="street/appartement"
+          required
+        />
+      </div>
+      <div className="mb-6">
+        <label
+          htmlFor="email"
+          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >
+         Zip/PostCode
+        </label>
+        <input
+          onChange={(e) => handleChange(e, "phone")}
+          type="text"
+          id="phone"
+          style = {{'minWidth':'300px'}}
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="street/appartement"
+          required
+        />
+      </div>
+
+      <div className="mb-6">
+        <label
+          htmlFor="email"
+          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >
+         Email Address
+        </label>
+        <input
+          onChange={(e) => handleChange(e, "phone")}
+          type="text"
+          id="phone"
+          style = {{'minWidth':'300px'}}
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="street/appartement"
+          required
+        />
+      </div>
+
+      <div className="mb-6">
+        <label
+          htmlFor="email"
+          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >
+         Phone Number
+        </label>
+        <input
+          onChange={(e) => handleChange(e, "phone")}
+          type="text"
+          id="phone"
+          style = {{'minWidth':'300px'}}
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="street/appartement"
+          required
+        />
+      </div>
+
       <div className="mb-6 flex items-center mb-4">
       <input id="disabled-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
         <label
@@ -88,7 +160,7 @@ export default function FloatLabelDemo() {
         
       </div>
       <button
-            style = {{'width':'140px'}}
+            style={{ width: "280px" ,backgroundColor:'gray' }}
             type="submit"
             onClick = {()=> setShowModal(true)}
             className="mt-6 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -96,6 +168,8 @@ export default function FloatLabelDemo() {
            Pay Button
           </button>
   { showModal &&<SumbmissionModal changeModal={changeModal}/>}
+    </div>
+    </div>
     </div>
     </div>
   );

@@ -124,7 +124,7 @@ const Contacting = () => {
       );
     }
 
-    // navigate("submit");
+     navigate("submit");
   }
 
   function takeImages(props) {
@@ -132,8 +132,8 @@ const Contacting = () => {
   }
 
   return (
-    <>
-      <div className="container mx-auto mt-6 mb-4 flex justify-center text-xl">
+    <div className="mb-6 " style = {{'background':'#fdf8f1'}}>
+      <div  className="container mx-auto mb-6 flex justify-center text-xl">
         <h1>Splendid, now add the child to your story!</h1>
       </div>
       <div className="backgroundDIv">
@@ -145,7 +145,7 @@ const Contacting = () => {
       <div className="container mx-auto flex flex-col divForms">
         <form style={{ marginLeft: "135px" }}>
           <div className="grid gap-6 mb-6 md:grid-cols-2">
-            <div>
+            <div >
               <label
                 htmlFor="first_name"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -169,7 +169,7 @@ const Contacting = () => {
               )}
             </div>
           </div>
-          <div className="mb-6">
+           {/*  <div className="mb-6">
             <label
               htmlFor="email"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -192,7 +192,6 @@ const Contacting = () => {
               <ErrorMessage message="Please write a valid Mail" />
             )}
           </div>
-
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -216,6 +215,7 @@ const Contacting = () => {
               <ErrorMessage message="Please write a valid Phone number" />
             )}
           </div>
+          */}
 
           <div className="mb-6">
             <label
@@ -249,16 +249,16 @@ const Contacting = () => {
             </div>
           </div>
           <button
-            style={{ width: "140px" }}
+            style={{ width: "280px" ,backgroundColor:'gray' }}
             onClick={handleSubmit}
             type="submit"
             className=" mt-6 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
-            Next
+            Continue
           </button>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

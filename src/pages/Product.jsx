@@ -36,7 +36,7 @@ const Product = () => {
   }, [productId]);
 
   return productData ? (
-    <div className="container mx-auto border-t-2 pt-10 trasition-opacity ease-in duration-500 opacity-100"
+    <div className="container mx-auto pt-10 trasition-opacity ease-in duration-500 opacity-100"
       style={{ marginRight: "135px", marginLeft: "135px" }}
     >
       <div className="flex gap-12 flex-col sm:flex-row">
