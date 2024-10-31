@@ -11,7 +11,6 @@ export function useClickOutside(
   const ref = useRef();
 
   useEffect(() => {
-    console.log(1)
     const listener = (event) => {
       const { target } = event ?? {};
       if (Array.isArray(nodes)) {

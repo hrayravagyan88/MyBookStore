@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Product from "./pages/Product";
 import Contacting from "./pages/Personalize";
 import Submit from "./pages/Submit";
+import Faq from "./pages/Faq";
 import MainLayout from "./components/MainLayout";
 import DeliveryInfo from "./components/DeliveryInfo";
 
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/deliveryInfo" element={<DeliveryInfo />} />
+          <Route path="/questions" element={<Faq />} />
           <Route
             path="/product/:productId/Contacting"
             element={<Contacting />}
