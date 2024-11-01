@@ -11,6 +11,8 @@ import Lion from '../assets/lion.png'
 import Mommy from '../assets/Mommy.avif'
 import Avatar from '../assets/Avatar.png'
 import AvatarBackGround from '../assets/AvatarBackGround.png'
+import WhereAreYou from '../assets/WhereAreYou.avif'
+import TeamPic from '../assets/TeamPic.avif'
 export const assets = {
     logo,
     bear1,
@@ -24,7 +26,9 @@ export const assets = {
     Lion,
     Mommy,
     Avatar,
-    AvatarBackGround
+    AvatarBackGround,
+    WhereAreYou,
+    TeamPic
 }
 
 export const products = [

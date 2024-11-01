@@ -269,6 +269,18 @@ ul.a {
 .DeliveryInfoContainer{
 height:125px;
 }
+.TextInpic{
+  position:absolute;
+  left:400px;
+  top:220px;
+color:#D8460D;
+}
+.textDiv{
+  margin: auto auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2
+}
 .firstContainer{
 
 }

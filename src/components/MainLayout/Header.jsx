@@ -189,7 +189,7 @@ export default function Header() {
                     </svg>
                     Our heroes
                   </a>
-
+              <NavLink to='OurStory'>
                   <a
                     className="text-gray-800focus:outline-none flex items-center rounded-lg p-2 text-[19px] dark:text-neutral-200"
                     href="#"
@@ -211,6 +211,7 @@ export default function Header() {
                     </svg>
                     Our story
                   </a>
+                  </NavLink>
                 </div>
               </div>
 

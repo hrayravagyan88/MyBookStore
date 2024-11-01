@@ -7,6 +7,7 @@ import Submit from "./pages/Submit";
 import Faq from "./pages/Faq";
 import MainLayout from "./components/MainLayout";
 import DeliveryInfo from "./components/DeliveryInfo";
+import OurStory from "./pages/OurStory";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/deliveryInfo" element={<DeliveryInfo />} />
+          <Route path="/OurStory" element={<OurStory />} />
           <Route path="/questions" element={<Faq />} />
           <Route
             path="/product/:productId/Contacting"
