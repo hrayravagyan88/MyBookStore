@@ -10,7 +10,7 @@ const OurStory = () => {
         <p className="TextInpic">Հեքիաթ, որտեղ գլխավոր հերոսը դու ես</p>
       </div>
     </div>
-     <div className="grid grid-cols-2 gap-2">
+     <div className="grid grid-cols-2 gap-2 border-b-2 pb-6">
         <div className="picDiv"> 
             <img src={assets.TeamPic} />
         </div>
@@ -21,7 +21,7 @@ const OurStory = () => {
              </p>
         </div>
      </div>
-     <div className="grid grid-cols-2 gap-2">
+     <div className="grid grid-cols-2 gap-2 mt-6">
         
         <div className="textDiv"><p>Դառնալով հեքիաթի մի մասնիկը՝ գունեղ երևակայությունն ու պատկերազարդ արկածները երեխային տանում են իր հեքիաթների աշխարհ՝
              <br/>հաղթահարելու փորձություններ և ձևավորելու նոր արժեքներ:
